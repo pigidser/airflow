@@ -360,7 +360,7 @@ class SelectiveChecks:
 
     @cached_property
     def sqlite_exclude(self) -> list[dict[str, str]]:
-        return [{"python-version": "3.9"}] if self._full_tests_needed else []
+        return [{"python-version": "3.11"}] if self._full_tests_needed else []
 
     @cached_property
     def kubernetes_versions(self) -> list[str]:
